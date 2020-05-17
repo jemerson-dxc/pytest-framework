@@ -18,6 +18,5 @@ class BasePage:
         return elements
 
     def enter_text_and_select_return(self, identifier, text):
-        # input_field = self.browser.find_element(*identifier)
         input_field = self.find(identifier)
         input_field.send_keys(text + Keys.RETURN)
